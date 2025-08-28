@@ -1,0 +1,15 @@
+{
+  "name": "rust_md_core",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "rust_md_core_bg.wasm",
+    "rust_md_core.js",
+    "rust_md_core.d.ts"
+  ],
+  "main": "rust_md_core.js",
+  "types": "rust_md_core.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
