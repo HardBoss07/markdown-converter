@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.markdown h1 {
+    @apply text-3xl font-bold mb-4;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.markdown h2 {
+    @apply text-2xl font-semibold mb-3;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.markdown p {
+    @apply mb-3 text-base leading-relaxed;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.markdown strong {
+    @apply font-bold;
+}
+
+.markdown ul {
+    @apply list-disc list-inside mb-3;
+}
+
+.markdown ol {
+    @apply list-decimal list-inside mb-3;
+}
+
+.markdown li {
+    @apply mb-1;
+}
+
+.markdown table {
+    @apply border-collapse border border-gray-300 mb-4 w-full;
+}
+
+.markdown th, .markdown td {
+    @apply border border-gray-300 px-3 py-1 text-left;
+}
+
+.markdown thead th {
+    @apply bg-gray-100;
 }
